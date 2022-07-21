@@ -1,0 +1,14 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes
+
+mir system</help_text><element><id>UMLClass</id><coordinates><x>470</x><y>500</y><w>450</w><h>360</h></coordinates><panel_attributes>
+
+
+
+mir-system
+-
+
+- Allows an owner to take photos of their vessel
+- Allows an owner to build a photo-based history of their vessel 
+- Allows a surveyor to</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>590</x><y>180</y><w>60</w><h>110</h></coordinates><panel_attributes>Owner</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>700</x><y>180</y><w>80</w><h>110</h></coordinates><panel_attributes>Surveyor</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>280</y><w>90</w><h>240</h></coordinates><panel_attributes>lt=&lt;-
+Use HTTPS</panel_attributes><additional_attributes>10;220;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>270</y><w>90</w><h>240</h></coordinates><panel_attributes>lt=&lt;-
+Use HTTPS</panel_attributes><additional_attributes>10;220;10;10</additional_attributes></element></diagram>
