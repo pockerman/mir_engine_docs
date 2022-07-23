@@ -1,0 +1,59 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>380</x><y>420</y><w>580</w><h>400</h></coordinates><panel_attributes>mir-system
+[Distributed Software System]
+
+fontsize=18
+-
+
+
+
+- Allows owners to collect images for their
+vessel and request an evaluation based on these
+- Allows owners to access a survey history regarding their vessel
+
+- Allows surveyors to estimate the state of a vessel remotely
+via images
+- Assists surveyors with on-site survey
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>420</x><y>140</y><w>100</w><h>120</h></coordinates><panel_attributes>Vessel Owner
+[Person]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>640</x><y>120</y><w>100</w><h>120</h></coordinates><panel_attributes>Vessel Surveyor
+[Person]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>970</x><y>150</y><w>100</w><h>120</h></coordinates><panel_attributes>Vessel Operator
+[Bussiness]</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>250</y><w>70</w><h>190</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>50;170;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>50</x><y>230</y><w>260</w><h>90</h></coordinates><panel_attributes>- Assesses vessel state via images
+- Request vessel survey
+- Maintains vessel survey history
+- Estimates value of vessel on the market
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>250</y><w>210</w><h>90</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>190;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>250</y><w>220</w><h>190</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;170;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>220</y><w>100</w><h>220</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;200;80;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>760</x><y>50</y><w>300</w><h>70</h></coordinates><panel_attributes>- Assesses vessel state via images
+- Creates vessel surveys documents on request
+- Creates on-site surveys  
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>110</y><w>260</w><h>250</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>240;10;10;230</additional_attributes></element><element><id>UMLNote</id><coordinates><x>80</x><y>50</y><w>360</w><h>70</h></coordinates><panel_attributes>System context view for mir-system
+fontsize=18 
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>930</x><y>200</y><w>330</w><h>150</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>310;10;310;130;10;130</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1090</x><y>140</y><w>230</w><h>70</h></coordinates><panel_attributes>It will allow same capabilities 
+as for an owner but on scale
+Possibly custom made features
+will be allowed
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1160</x><y>500</y><w>200</w><h>60</h></coordinates><panel_attributes>e-mail service
+[Software System]
+-
+Sends email notifications to
+users on request
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>500</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+Sends e-mail using</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1160</x><y>590</y><w>200</w><h>100</h></coordinates><panel_attributes>DB services
+-
+Persists information on demand
+
+- AWS S3 
+- AWS DynamoDB
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>590</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+Persists information using</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1160</x><y>720</y><w>200</w><h>60</h></coordinates><panel_attributes>Authentication service
+-
+AWS Cognito
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>730</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+Authenticates users using</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>UMLActor</id><coordinates><x>140</x><y>400</y><w>140</w><h>170</h></coordinates><panel_attributes>Administrator
+[Person]
+-
+
+Monitors the system
+via dashboards</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>130</x><y>590</y><w>160</w><h>170</h></coordinates><panel_attributes>Data Scientist
+[Person]
+-
+
+Accesses collect data
+for model improvement </panel_attributes><additional_attributes></additional_attributes></element></diagram>
