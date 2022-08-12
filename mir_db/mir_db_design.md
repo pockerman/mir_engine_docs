@@ -45,7 +45,7 @@ searching into the vessels collection is provided
 
 The following are the queries that an owner can generate via their profile view
 
-- Get owner vessels: GET /owners/user_idx/vessels 
+- Get owner vessels: ```GET /owners/user_idx/vessels``` 
 - Search over the vessels an owner has created using filters GET /owners/user_idx/vessels  either of the following criteria
   - vessel name
   - mmsi
@@ -62,7 +62,7 @@ Both calls return a list of vessel ids registered by the owner
 The owner from their profile view can click on the **Your Surveys** button and view 
 a list of surveys they have generated
 
-- Get owner surveys: GET /owners/{user_idx}/surveys
+- Get owner surveys: ```GET /owners/{user_idx}/surveys```
 
 Constraints:
 
@@ -76,7 +76,7 @@ The owner from their profile can click on the **Register Vessel** button
 in order to be able to register a vessel. This creates a new resource
 
  
-- Register a vessel: POST /owners/{user_idx}/vessels
+- Register a vessel: ```POST /owners/{user_idx}/vessels```
 
 Constraints:
 
@@ -88,17 +88,17 @@ Constraints:
 From the list of vessels that the user is presented in their profile, they can click on a link and view the vessel profile. 
 In this view we have the following queries
 
-- Get basic info about vessel GET /vessels/{vessel_idx} limited with: 
+- Get basic info about vessel ```GET /vessels/{vessel_idx}``` limited with: 
    - Name
    - Length 
    - Beam
    - Propulsion type
    - Vessel surveys (sorted with the newest at the top)
    
-- Operational profile GET /surveys/{survey_idx}
+- Operational profile ```GET /surveys/{survey_idx}```
   - filter only vessel health related info
   
-- Outstanding Items GET /surveys/{survey_idx}
+- Outstanding Items ```GET /surveys/{survey_idx}```
   - filter only survey recommendations related info
 
 
@@ -112,7 +112,7 @@ The owner from the profile of a registered vessel can generate surveys. This is 
 by clicking on the **Generate Survey** button which leads them to this view. In this view an
 API call is made to get the survey types supported by the mir-system
 
-- GET /surveys/types
+- ```GET /surveys/types```
 
 
 These types are shown as a drop down menu to the user
@@ -124,7 +124,7 @@ In this view the user is prompted to take photos of various parts
 of the vessel. The application queries which parts are appropriate for the
 specific vessel type and the specific survey type
 
-- GET /surveys/{vessel_type}/parts
+- ```GET /surveys/{vessel_type}/parts```
 
 The application creates a list of items out of these parts
 
