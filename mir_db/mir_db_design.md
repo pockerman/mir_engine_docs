@@ -131,7 +131,7 @@ The application creates a list of items out of these parts
 
 #### Owner: Add Vessel Part Photo view RV.17.0
 
-Once the owner clicks on a vessel part from the <a name="owner-gen-cond-vessel-survey-rv-19-0"></a> RV.19.0
+Once the owner clicks on a vessel part from the [Owner: Generate Condition Vessel Survey view RV.19.0] <a name="owner-gen-cond-vessel-survey-rv-19-0"></a> RV.19.0
 
 
 #### 
