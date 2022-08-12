@@ -53,6 +53,5 @@ user
 -
 fontsize=18
 bg=white
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1300</x><y>210</y><w>220</w><h>80</h></coordinates><panel_attributes>symbol=component
-mir-mobile-app
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1300</x><y>210</y><w>220</w><h>50</h></coordinates><panel_attributes>symbol=component
 Deployable-container</panel_attributes><additional_attributes></additional_attributes></element></diagram>
