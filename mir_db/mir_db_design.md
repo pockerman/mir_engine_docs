@@ -76,7 +76,7 @@ The owner from their profile can click on the **Register Vessel** button
 in order to be able to register a vessel. This creates a new resource
 
  
-- Register a vessel: ```POST /owners/{user_idx}/vessels```
+- Register a vessel: ```POST /vessels```
 
 Constraints:
 
